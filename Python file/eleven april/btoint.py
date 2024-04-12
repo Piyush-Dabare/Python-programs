@@ -1,0 +1,6 @@
+a = bin(12)
+b= oct(12)
+c= hex(12)
+print('\n',int(a,2))
+print('\n',int(b,8))
+print('\n',int(c,16))
