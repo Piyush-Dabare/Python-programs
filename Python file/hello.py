@@ -30,6 +30,6 @@ elif(per_att>50):
 else:
     print("Not Allowed")'''
     
-print(2**3**2)
+print("HELLO")
 
 
