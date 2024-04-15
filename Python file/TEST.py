@@ -19,25 +19,35 @@ while idx < 5:
     idx+=1
 print("*" * 5)
 '''
-while(1):    
-    print("""\na.thali 
-b.chapati 
-c.lassi 
-d.paratha """)
-    order=input("enter your order   :   ")
-    if(order == "a"):
-        print("thali order placed")
-    elif(order == "b"):
-        print("chapati order placed")
-    elif(order =="c"):
-        print("lassi ordered")
-    elif(order=="d"):
-        print("Paratha")
-    else:
-        print("quit")
-        break
-else:
-    print("Limit is reached")
+# while(1):    
+#     print("""\na.thali 
+# b.chapati 
+# c.lassi 
+# d.paratha """)
+#     order=input("enter your order   :   ")
+#     if(order == "a"):
+#         print("thali order placed")
+#     elif(order == "b"):
+#         print("chapati order placed")
+#     elif(order =="c"):
+#         print("lassi ordered")
+#     elif(order=="d"):
+#         print("Paratha")
+#     else:
+#         print("quit")
+#         break
+# else:
+#     print("Limit is reached")
+
+s = "Hello"
+formatted_string = "{:*>7}".format(s)
+print(formatted_string)
+
+# r=s.split('')
+print(split(s))
+
+
+
 
 
 
