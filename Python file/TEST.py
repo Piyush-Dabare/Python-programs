@@ -44,11 +44,11 @@ formatted_string = "{:*>7}".format(s)
 print(formatted_string)
 
 # r=s.split('')
-print(split(s))
+print()
 
 
 
 
-
+# 
 
 
