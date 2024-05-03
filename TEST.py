@@ -81,9 +81,9 @@ print("*" * 5)
 # # st[7:8]= sub_str
 # print(s)
 
-st = ['qee','ta','ycv','ibh','pdkj']
-st = sorted(st, key= lambda x: x[1])
-print(st)
+# st = ['qee','ta','ycv','ibh','pdkj']
+# st = sorted(st, key= lambda x: x[1])
+# print(st)
 
 # print(s)
 # s.remove(54)
@@ -124,3 +124,77 @@ print(st)
 # m = max(d1.values())
 # print(d2, m)
 
+# 5. Given a two Python list. Iterate both lists simultaneously such that list1 should display item in original order and list2 in reverse order. It should work for any two lists.
+# list1 = [10, 20, 30, 40]
+# list2 = [100, 200, 300, 400]
+# # output:
+# # 10 400
+# # 20 300
+# # 30 200
+# # 40 100
+# # print(list2[-])
+# j=-1
+# for i in range(len(list1)):
+#     print(list1[i],list2[j])
+#     j-=1
+
+# vowels = "AEIOUY"
+# #DDXDDD-DD
+# #012345678
+# st = input()
+# lt = list(st)
+# p = 'valid'
+# c = []
+# a = int(lt[0])+ int(lt[1])
+# c.append(a)
+# a= int(lt[3]) + int(lt[4])
+# c.append(a)
+# a = int(lt[4]) + int(lt[5])
+# c.append(a)
+# a = int(lt[7]) + int(lt[8])
+# c.append(a)
+# for i in c:
+#     if i%2==1:
+#         p="invalid"
+#         break
+# if lt[2] in vowels:
+#     p="invalid"
+# print(p)
+
+
+# l = [12,34,56,7,4,90,23,34,64,6] 
+# # for i,j in enumerate(l):
+# #     print("index =",i,"value =",j)
+# # print(l)
+# # # lt = [e if e>20 else 9009 for e in l]
+# lt = l
+# # print(lt)
+# # lt.insert(0,89578)
+# print(lt[::3])
+
+# num = 3456
+# c=0
+# l=[]
+# for i in range(len(str(num))):
+#     l.append(num%10)
+#     num//=10
+# c = len(l)
+# print(l)
+# print(c)
+
+# for i in l:
+    
+
+# l = [True for i in range(7)]
+# print(l)
+emp={45:"ankit",12:"suraj",56:"chardul",98:"vivek",23:"bsumati",1:"sumantra"}
+# sort them by their id
+
+print(sorted(emp.values()))
+sorted_empid_dict = {}
+for empid in sorted(emp.values()):
+    for i in emp.keys():
+        if emp[i]==empid:
+            break  
+    sorted_empid_dict[i] = empid
+print(sorted_empid_dict)
