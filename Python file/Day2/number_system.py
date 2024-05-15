@@ -4,8 +4,10 @@ Ask the user which input needs to be converted
 Then convert given string to integer using int() function
 '''
 
-base=int(input("enter the base "))
-number=input("enter a number")
-#number=bin(34)
-#print(number)
-print(int(number,base))
+# base=int(input("enter the base "))
+# number=input("enter a number")
+# # number=bin(34)
+# print(number)
+# print(int(number,base))
+print(int('412',8))
+print(chr(90))

@@ -187,14 +187,57 @@ print("*" * 5)
 
 # l = [True for i in range(7)]
 # print(l)
-emp={45:"ankit",12:"suraj",56:"chardul",98:"vivek",23:"bsumati",1:"sumantra"}
-# sort them by their id
+# emp={45:"ankit",12:"suraj",56:"chardul",98:"vivek",23:"bsumati",1:"sumantra"}
+# # sort them by their id
 
-print(sorted(emp.values()))
-sorted_empid_dict = {}
-for empid in sorted(emp.values()):
-    for i in emp.keys():
-        if emp[i]==empid:
-            break  
-    sorted_empid_dict[i] = empid
-print(sorted_empid_dict)
+# print(sorted(emp.values()))
+# sorted_empid_dict = {}
+# for empid in sorted(emp.values()):
+#     for i in emp.keys():
+#         if emp[i]==empid:
+#             break  
+#     sorted_empid_dict[i] = empid
+# print(sorted_empid_dict)
+
+
+
+
+
+
+# l = (1,2,3,5,[15,1,5,[15,7,6]])
+# # for i in l:
+# #     if len(i)>1:
+# #         stack1.append(i)
+
+# def fList(stack1,n):
+#     for i in stack1:
+#         a = str(i)
+#         if len(a)>=2:
+#             fList(i,n)
+#         elif i == n:
+#             print(i)
+#             return
+#     return
+
+# fList(l,6)
+
+
+
+# r0=[1]
+# n=5
+# for row in range(n):
+#     r=[1]
+#     for i in range(1,len(r0)):
+#         r.append(r0[i-1]+r0[i]) #i-1 and i from previous row
+#     r.append(1)
+#     print(r)
+#     r0=r
+############# Method 2 ###
+r0=[1]
+n=5
+for row in range(n):
+    r=[1]
+    for i in range(len(r0)):
+        r.append(sum(r0[i:i+2])) #i-1 and i from previous row
+    print(r)
+    r0=r
